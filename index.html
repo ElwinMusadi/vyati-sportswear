@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="public/css/tailwind.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>Vyati Sportswear</title>
+</head>
+<body class="bg-black-sport-500 font-body antialiased" style="height: 2000px;">
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 w-full z-20">
+    <div class="container">
+      <div class="relative flex items-center justify-between h-20">
+        <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
+          <!-- Mobile menu button-->
+          <button class="btn-toggle inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none transition-all duration-300">
+            <svg class="menu block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+
+            <svg class="close hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 flex items-center justify-between">
+          <div class="flex-shrink-0 flex items-center">
+            <a href="#">
+              <img class="block h-10 w-auto" src="public/img/Logo.png" alt="Vyati Logo">
+            </a>
+          </div>
+          <div class="hidden lg:block sm:ml-6 navigation">
+            <div class="flex">
+              <a href="#home" class="page-scroll text-gray-sport-200 hover:text-gold-500 ml-12 text-lg font-medium transition-all duration-150">Home</a>
+              <a href="#about" class="page-scroll text-gray-sport-200 hover:text-gold-500 ml-12 text-lg font-medium transition-all duration-150">About</a>
+              <a href="#testimonial" class="page-scroll text-gray-sport-200 hover:text-gold-500 ml-12 text-lg font-medium transition-all duration-150">Testimonial</a>
+              <a href="#services" class="page-scroll text-gray-sport-200 hover:text-gold-500 ml-12 text-lg font-medium transition-all duration-150">Services</a>
+              <a href="#projects" class="page-scroll text-gray-sport-200 hover:text-gold-500 ml-12 text-lg font-medium transition-all duration-150">Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+
+  <!-- Navbar Mobile -->
+  <div class="mobile-nav fixed w-full lg:hidden transform -translate-y-full transition-all duration-500 ease-out z-10">
+    <div class="container space-y-2 py-2">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a href="#home" class="page-scroll text-gray-300 hover:text-gold-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+      <a href="#about" class="page-scroll text-gray-300 hover:text-gold-500 block px-3 py-2 rounded-md text-base font-medium">About</a>
+      <a href="#testimonial" class="page-scroll text-gray-300 hover:text-gold-500 block px-3 py-2 rounded-md text-base font-medium">Testimonial</a>
+      <a href="#services" class="page-scroll text-gray-300 hover:text-gold-500 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+      <a href="#projects" class="page-scroll text-gray-300 hover:text-gold-500 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="home" class="relative w-full h-auto bg-no-repeat bg-cover overflow-hidden" style="background-image: url('/public/img/header/header-bg.svg');">
+    <div class="container">
+      <div class="flex items-center justify-center lg:justify-start">
+        <div class="w-10/12 lg:w-6/12 xl:w-7/12 text-center lg:text-left text-gray-sport-200 my-40 lg:mb-28 lg:mt-48">
+          <h1 class="text-4xl xl:text-5.5xl font-semibold leading-normal">We Make Sportswear More Than <span class="text-gold-500">Special</span></>
+          <p class="text-lg xl:text-xl font-medium mt-3 mb-10">Custom jersey dengan desain eksklusif, kualitas <br class="hidden md:inline-block">premium terbaik dengan harga terjangkau.</p>
+          <button class="bg-gold-500 hover:bg-gold-800 py-3 px-7 text-base text-white transition-colors duration-150">Get Started</button>
+        </div>
+        <div class="hidden lg:block w-8/12 absolute top-20 right-0">
+          <img class="w-full h-auto" src="public/img/header/header-img.png" alt="Header Image">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Akhir Header -->
+
+
+
+
+
+  <script src="public/js/script.js"></script>
+</body>
+</html>

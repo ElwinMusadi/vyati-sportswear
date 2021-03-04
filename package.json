@@ -1,0 +1,17 @@
+{
+  "name": "vyati-sportswear",
+  "version": "1.0.0",
+  "description": "Landing Page Vyati Sportswear",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss build ./src/css/style.css -o ./public/css/tailwind.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elwin Musadi",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
+  }
+}
