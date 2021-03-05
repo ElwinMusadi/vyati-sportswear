@@ -1,0 +1,82 @@
+#about .kerah-baju, 
+#about .jahitan, 
+#about .label, 
+#about .warna, 
+#about .bahan {
+  width: 43%;
+}
+
+#about .hangtag {
+  width: 43%;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+  #about .kerah-baju {
+    top: 100px;
+    left: 5px;
+  }
+
+  #about .hangtag {
+    top: 200px;
+    left: 10px;
+  }
+
+  #about .jahitan {
+    top: 524px;
+    left: 10px;
+  }
+
+  #about .label {
+    top: 100px;
+    left: 10px;
+  }
+
+  #about .warna {
+    top: 355px;
+    left: 10px;
+  }
+
+  #about .bahan {
+    top: 555px;
+    left: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  #about .kerah-baju,
+  #about .hangtag,
+  #about .jahitan,
+  #about .label,
+  #about .warna,
+  #about .bahan {
+    width: auto;
+  }
+
+  #about .kerah-baju {
+    left: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #about .kerah-baju {
+    left: 135px;
+  }
+
+  #about .hangtag {
+    left: 115px;
+  }
+
+  #about .jahitan {
+    left: 102px;
+  }
+
+  #about .label {
+    left: 555px;
+  }
+
+  #about .label {
+    left: 580px;
+  }
+}

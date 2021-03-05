@@ -32514,6 +32514,34 @@ video {
           animation: bounce 1s infinite;
 }
 
+/* #about .kerah-baju {
+  top: 100px;
+} */
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  #about .kerah-baju {
+    width: 295px;
+    top: 100px;
+    left: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  #about .kerah-baju {
+    width: 367px;
+    left: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #about .kerah-baju {
+    left: 135px;
+  }
+}
+
 @media (min-width: 576px) {
   .sm\:container {
     width: 100%;
