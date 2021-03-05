@@ -5,6 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <title>Vyati Sportswear</title>
+
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="public/css/tailwind.css">
   <link rel="stylesheet" href="public/css/about.css">
@@ -12,8 +20,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <title>Vyati Sportswear</title>
+  
 </head>
 <body class="bg-black-sport-500 font-body antialiased" style="height: 2000px;">
   <!-- Navbar -->
@@ -22,7 +29,7 @@
       <div class="relative flex items-center justify-between h-20">
         <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
           <!-- Mobile menu button-->
-          <button class="btn-toggle inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none transition-all duration-300">
+          <button class="btn-toggle inline-flex items-center justify-center p-2 rounded-none text-gray-400 hover:text-white focus:outline-none border border-gray-400 transition-all duration-300">
             <svg class="menu block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -68,12 +75,12 @@
   </div>
 
   <!-- Header -->
-  <header id="home" class="relative w-full h-auto bg-no-repeat bg-cover overflow-hidden" style="background-image: url('/public/img/header/header-bg.svg');">
+  <header id="home" class="relative w-full h-auto bg-no-repeat bg-cover overflow-hidden" style="background-image: url('/public/img/header/header-bg.svg'); max-height: 670px;">
     <div class="container">
       <div class="flex items-center justify-center lg:justify-start">
         <div class="w-10/12 lg:w-6/12 xl:w-7/12 text-center lg:text-left text-gray-sport-200 mt-40 mb-24 lg:mb-32 lg:mt-48">
-          <h1 class="text-4xl xl:text-5.5xl font-semibold leading-normal">We Make Sportswear More Than <span class="text-gold-500">Special</span></h1>
-          <p class="text-lg xl:text-xl font-medium mt-3 mb-10">Custom jersey dengan desain eksklusif, kualitas <br class="hidden md:inline-block">premium terbaik dengan harga terjangkau.</p>
+          <h1 class="text-4xl md:text-5xl lg:text-4xl xl:text-5.5xl font-semibold leading-normal md:leading-normal lg:leading-normal">We Make Sportswear More Than <span class="text-gold-500">Special</span></h1>
+          <p class="text-base md:text-lg xl:text-xl font-medium mt-3 mb-14">Custom jersey dengan desain eksklusif, kualitas <br class="hidden md:inline-block">premium terbaik dengan harga terjangkau.</p>
           <button class="bg-gold-500 hover:bg-gold-800 py-3 px-7 text-base text-white transition-colors duration-150">Get Started</button>
         </div>
         <div class="hidden lg:block w-8/12 absolute top-20 right-0">
@@ -87,18 +94,79 @@
   <!-- About -->
   <section id="about" class="bg-black-sport-300 py-16">
     <div class="container">
-      <div class="w-10/12 md:w-7/12 xl:w-6/12 text-center mx-auto mb-5">
-        <div class="text-3xl xl:text-4xl leading-normal xl:leading-normal font-semibold text-gray-sport-200">Like A Normal Sportswear Only Much <span class="text-gold-500">Spesial</span></div>
+      <div class="w-9/12 sm:w-8/12 md:w-7/12 xl:w-6/12 text-center mx-auto mb-5">
+        <div class="text-2xl md:text-3xl xl:text-4xl leading-normal xl:leading-normal font-semibold text-gray-sport-200">Like A Normal Sportswear Only Much <span class="text-gold-500">Spesial</span></div>
       </div>
-      <div class="relative flex justify-center -mt-8 md:-mt-16">
-        <img class="" src="public/img/about/DETAIL.png" alt="Detail Jersey">
-        <div class="details hidden md:block">
-          <img class="kerah-baju w-full h-auto absolute" src="public/img/about/kerah.png" alt="Kerah Baju">
-          <img class="hangtag w-full h-auto absolute" src="public/img/about/hangtag.png" alt="Hangtag & Stiker">
-          <img class="jahitan w-full h-auto absolute" src="public/img/about/jahitan.png" alt="Jahitan">
-          <img class="label w-full h-auto absolute" src="public/img/about/label.png" alt="Label">
-          <img class="warna w-full h-auto absolute" src="public/img/about/warna.png" alt="Warna">
-          <img class="bahan w-full h-auto absolute" src="public/img/about/bahan.png" alt="Bahan">
+      <div class="md:relative flex justify-center mt-14 md:-mt-16">
+        <div class="hidden md:block">
+          <img class="" src="public/img/about/DETAIL.png" alt="Detail Jersey">
+          <div class="details">
+            <img class="kerah-baju w-full h-auto absolute" src="public/img/about/kerah.png" alt="Kerah Baju">
+            <img class="hangtag w-full h-auto absolute" src="public/img/about/hangtag.png" alt="Hangtag & Stiker">
+            <img class="jahitan w-full h-auto absolute" src="public/img/about/jahitan.png" alt="Jahitan">
+            <img class="label w-full h-auto absolute" src="public/img/about/label.png" alt="Label">
+            <img class="warna w-full h-auto absolute" src="public/img/about/warna.png" alt="Warna">
+            <img class="bahan w-full h-auto absolute" src="public/img/about/bahan.png" alt="Bahan">
+          </div>
+        </div>
+        <div class="flex md:hidden justify-between items-center">
+          <img class="w-7/12 h-auto pr-4" src="public/img/about/detaill-mobile.png" alt="Detail Jersey">
+          <div class="w-5/12 space-y-3">
+            <div class="details-mobile">
+              <div class="text-xs sm:text-sm font-semibold text-gold-300 flex items-center">
+                <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                KERAH
+              </div>
+              <div class="text-xxs sm:text-xs font-medium text-gray-sport-200 pl-8">Menggunakan bahan RIB</div>
+            </div>
+            <div class="details-mobile">
+              <div class="text-xs sm:text-sm font-semibold text-gold-300 flex items-center">
+                <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                EXCLUSIVE
+              </div>
+              <div class="text-xxs sm:text-xs font-medium text-gray-sport-200 pl-8">Hangtag & Stiker</div>
+            </div>
+            <div class="details-mobile">
+              <div class="text-xs sm:text-sm font-semibold text-gold-300 flex items-center">
+                <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                JAHITAN
+              </div>
+              <div class="text-xxs sm:text-xs font-medium text-gray-sport-200 pl-8">Menggunakan teknik Stick Stiches</div>
+            </div>
+            <div class="details-mobile">
+              <div class="text-xs sm:text-sm font-semibold text-gold-300 flex items-center">
+                <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                AUTHENTIC
+              </div>
+              <div class="text-xxs sm:text-xs font-medium text-gray-sport-200 pl-8">Label</div>
+            </div>
+            <div class="details-mobile">
+              <div class="text-xs sm:text-sm font-semibold text-gold-300 flex items-center">
+                <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                WARNA
+              </div>
+              <div class="text-xxs sm:text-xs font-medium text-gray-sport-200 pl-8">Menggunakan tinta kualitas terbaik</div>
+            </div>
+            <div class="details-mobile">
+              <div class="text-xs sm:text-sm font-semibold text-gold-300 flex items-center">
+                <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                BAHAN
+              </div>
+              <div class="text-xxs sm:text-xs font-medium text-gray-sport-200 pl-8">Dari kualitas Fit Premium</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -12304,6 +12304,10 @@ video {
   line-height: 1;
 }
 
+.text-xxs {
+  font-size: .625rem;
+}
+
 .text-5\.5xl {
   font-size: 3.25rem;
 }
@@ -32514,34 +32518,6 @@ video {
           animation: bounce 1s infinite;
 }
 
-/* #about .kerah-baju {
-  top: 100px;
-} */
-
-@media (min-width: 576px) {
-}
-
-@media (min-width: 768px) {
-  #about .kerah-baju {
-    width: 295px;
-    top: 100px;
-    left: 5px;
-  }
-}
-
-@media (min-width: 992px) {
-  #about .kerah-baju {
-    width: 367px;
-    left: 45px;
-  }
-}
-
-@media (min-width: 1200px) {
-  #about .kerah-baju {
-    left: 135px;
-  }
-}
-
 @media (min-width: 576px) {
   .sm\:container {
     width: 100%;
@@ -44266,6 +44242,10 @@ video {
   .sm\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .sm\:text-xxs {
+    font-size: .625rem;
   }
 
   .sm\:text-5\.5xl {
@@ -76126,6 +76106,10 @@ video {
     line-height: 1;
   }
 
+  .md\:text-xxs {
+    font-size: .625rem;
+  }
+
   .md\:text-5\.5xl {
     font-size: 3.25rem;
   }
@@ -107984,6 +107968,10 @@ video {
     line-height: 1;
   }
 
+  .lg\:text-xxs {
+    font-size: .625rem;
+  }
+
   .lg\:text-5\.5xl {
     font-size: 3.25rem;
   }
@@ -139840,6 +139828,10 @@ video {
   .xl\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .xl\:text-xxs {
+    font-size: .625rem;
   }
 
   .xl\:text-5\.5xl {

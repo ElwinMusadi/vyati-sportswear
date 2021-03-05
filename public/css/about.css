@@ -1,13 +1,22 @@
-#about .kerah-baju, 
-#about .jahitan, 
-#about .label, 
-#about .warna, 
-#about .bahan {
+#about .kerah-baju,
+#about .label {
   width: 43%;
 }
 
 #about .hangtag {
-  width: 43%;
+  width: 48%;
+}
+
+#about .jahitan {
+  width: 45%;
+}
+
+#about .warna {
+  width: 46%;
+}
+
+#about .bahan {
+  width: 53%;
 }
 
 @media (min-width: 576px) {}
@@ -19,28 +28,28 @@
   }
 
   #about .hangtag {
-    top: 200px;
-    left: 10px;
+    top: 196px;
+    left: -8px;
   }
 
   #about .jahitan {
-    top: 524px;
-    left: 10px;
+    top: 509px;
+    left: -16px;
   }
 
   #about .label {
     top: 100px;
-    left: 10px;
+    left: 348px;
   }
 
   #about .warna {
-    top: 355px;
-    left: 10px;
+    top: 340px;
+    left: 390px;
   }
 
   #about .bahan {
-    top: 555px;
-    left: 10px;
+    top: 525px;
+    left: 358px;
   }
 }
 
@@ -55,7 +64,32 @@
   }
 
   #about .kerah-baju {
+    top: 100px;
     left: 45px;
+  }
+
+  #about .hangtag {
+    top: 200px;
+    left: 25px;
+  }
+
+  #about .jahitan {
+    top: 524px;
+    left: 12px;
+  }
+
+  #about .label {
+    left: 465px;
+  }
+
+  #about .warna {
+    top: 355px;
+    left: 520px;
+  }
+
+  #about .bahan {
+    top: 555px;
+    left: 480px;
   }
 }
 
@@ -76,7 +110,11 @@
     left: 555px;
   }
 
-  #about .label {
+  #about .warna {
+    left: 605px;
+  }
+
+  #about .bahan {
     left: 580px;
   }
 }

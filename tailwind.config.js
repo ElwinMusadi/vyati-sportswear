@@ -42,6 +42,7 @@ module.exports = {
         'gradient-radial-to-bl': 'radial-gradient(90% 115% at 100% 0%, var(--tw-gradient-stops))',
       }),
       fontSize: {
+        'xxs': '.625rem',
         '5.5xl': '3.25rem',
       }
     },
