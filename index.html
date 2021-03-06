@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
 
   <title>Vyati Sportswear</title>
 
@@ -23,10 +23,19 @@
   
 </head>
 <body class="bg-black-sport-500 font-body antialiased" style="height: 2000px;">
+  <!-- Preloader -->
+  <div class="preloader fixed top-0 left-0 w-full h-full bg-black-sport-500 z-50">
+    <div class="loading absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <img class="w-24" src="public/img/preloader.gif" alt="Preloader">
+    </div>
+  </div>
+
+  <!-- Akhir Preloader -->
+
   <!-- Navbar -->
-  <nav id="navbar" class="fixed top-0 w-full z-20">
+  <nav id="navbar" class="fixed top-0 w-full py-5 transition-all duration-300 ease-out z-20">
     <div class="container">
-      <div class="relative flex items-center justify-between h-20">
+      <div class="relative flex items-center justify-between">
         <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
           <!-- Mobile menu button-->
           <button class="btn-toggle inline-flex items-center justify-center p-2 rounded-none text-gray-400 hover:text-white focus:outline-none border border-gray-400 transition-all duration-300">
@@ -34,7 +43,6 @@
               stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
-
             <svg class="close hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -75,7 +83,7 @@
   </div>
 
   <!-- Header -->
-  <header id="home" class="relative w-full h-auto bg-no-repeat bg-cover overflow-hidden" style="background-image: url('/public/img/header/header-bg.svg'); max-height: 670px;">
+  <header id="home" class="relative w-full h-auto bg-no-repeat bg-cover overflow-hidden" style="background-image: url('public/img/header/header-bg.svg'); height: 670px;">
     <div class="container">
       <div class="flex items-center justify-center lg:justify-start">
         <div class="w-10/12 lg:w-6/12 xl:w-7/12 text-center lg:text-left text-gray-sport-200 mt-40 mb-24 lg:mb-32 lg:mt-48">
@@ -177,6 +185,7 @@
 
 
 
+  <script src="public/js/jquery.min.js"></script>
   <script src="public/js/script.js"></script>
 </body>
 </html>
