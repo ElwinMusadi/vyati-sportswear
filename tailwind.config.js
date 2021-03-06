@@ -50,6 +50,7 @@ module.exports = {
   variants: {
     extend: {
       fontWeight: ["hover", "focus"],
+      inset: ['hover', 'focus'],
     },
   },
   plugins: [
