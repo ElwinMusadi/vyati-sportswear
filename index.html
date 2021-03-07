@@ -20,6 +20,10 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="public/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="public/css/owl.theme.default.min.css">
   
 </head>
 <body class="bg-black-sport-500 font-body antialiased" style="height: 2000px;">
@@ -193,15 +197,40 @@
     <div class="container text-center">
       <div class="text-2xl md:text-3xl xl:text-4xl leading-normal xl:leading-normal font-semibold text-gold-500 mb-3">What People Say</div>
       <div class="text-xl font-normal text-gray-sport-200">Mereka yang percaya kepada kami</div>
-      <div class="flex mt-12">
-        <div class="w-1/3 bg-black-sport-300 p-6 rounded-lg flex justify-center">
-          <h6 class="text-base text-gray-sport-200">
+      <div class="flex mt-12 owl-carousel owl-theme">
+        <div class="item bg-black-sport-300 p-6 rounded-lg flex flex-col items-center justify-between lg:min-h-276 xl:min-h-248">
+          <h6 class="md:text-sm lg:text-base text-gray-sport-200">
             "Vyati Sportswear berhasil mengimplementasikan ide saya untuk membuat jersey tim sepak bola saya."
           </h6>
-          <div class="profile">
-            <div class="w-12 h-12 rounded-full border-2 border-gray-sport-200">
-              <img src="" alt="Asep Hidayat">
+          <div class="profile text-center flex flex-col items-center mt-5">
+            <div class="w-12 h-12 rounded-full border-2 border-gray-sport-200 mb-3 overflow-hidden">
+              <img src="public/img/testimonial/user-1.png" alt="Asep Hidayat">
             </div>
+            <div class="md:text-base lg:text-lg text-gold-300">Asep Hidayat</div>
+          </div>
+        </div>
+        <div class="item bg-black-sport-300 p-6 rounded-lg flex flex-col items-center justify-between lg:min-h-276 xl:min-h-248">
+          <h6 class="md:text-sm lg:text-base text-gray-sport-200">
+            "Bahan premium, warna awet dan nyaman dipakai, Vyati sportswear jagonya bikin jersey sepeda untuk komunitas
+            kami."
+          </h6>
+          <div class="profile text-center flex flex-col items-center mt-5">
+            <div class="w-12 h-12 rounded-full border-2 border-gray-sport-200 mb-3 overflow-hidden">
+              <img src="public/img/testimonial/user-2.png" alt="Asep Hidayat">
+            </div>
+            <div class="md:text-base lg:text-lg text-gold-300">Ninda Nandiandti</div>
+          </div>
+        </div>
+        <div class="item bg-black-sport-300 p-6 rounded-lg flex flex-col items-center justify-between lg:min-h-276 xl:min-h-248">
+          <h6 class="md:text-sm lg:text-base text-gray-sport-200">
+            "Bikin jersey ga pake lama ya di vyati sportswear, selain hasilnya nyaman dipakai, komunikasijya pun sangat
+            ramah."
+          </h6>
+          <div class="profile text-center flex flex-col items-center mt-5">
+            <div class="w-12 h-12 rounded-full border-2 border-gray-sport-200 mb-3 overflow-hidden">
+              <img src="public/img/testimonial/user-3.png" alt="Asep Hidayat">
+            </div>
+            <div class="md:text-base lg:text-lg text-gold-300">Arief Rahmat</div>
           </div>
         </div>
       </div>
@@ -214,6 +243,7 @@
 
 
   <script src="public/js/jquery.min.js"></script>
+  <script src="public/js/owl.carousel.min.js"></script>
   <script src="public/js/script.js"></script>
 </body>
 </html>

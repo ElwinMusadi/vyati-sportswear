@@ -37,4 +37,19 @@ $(document).ready(function() {
   }
 
   window.onscroll = navbarScroll;
+
+  // Owl Carousel - Testimonial
+  $(".owl-carousel").owlCarousel({
+    margin: 16,
+    nav: true,
+    autiHeight: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 3,
+      },
+    },
+  });
 })
