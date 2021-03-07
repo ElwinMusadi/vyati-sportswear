@@ -19,6 +19,11 @@
   width: 53%;
 }
 
+/* Owl Carousel */
+.owl-carousel .owl-stage, .owl-carousel .owl-item {
+  display: flex;
+}
+
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {

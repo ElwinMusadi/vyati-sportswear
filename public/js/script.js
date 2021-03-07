@@ -42,7 +42,7 @@ $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
     margin: 16,
     nav: true,
-    autiHeight: true,
+    // autiHeight: true,
     responsive: {
       0: {
         items: 1,
