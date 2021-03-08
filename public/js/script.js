@@ -6,6 +6,7 @@ $(document).ready(function() {
   const closeIcon = document.querySelector('.close');
   const mobileNav = document.querySelector('.mobile-nav');
   const navbar = document.querySelector('#navbar');
+  const waButton = document.querySelector('.wa');
 
   // Mobile Toggle Navbar
   btnToggle.addEventListener('click', function () {
@@ -28,9 +29,11 @@ $(document).ready(function() {
     if (this.scrollY >= 10) {
       navbar.classList.add("bg-black-sport-500");
       navbar.classList.replace("py-5", "py-4");
+      waButton.classList.replace("-bottom-20", "bottom-12");
     } else {
       navbar.classList.remove("bg-black-sport-500");
       navbar.classList.replace("py-4", "py-5");
+      waButton.classList.replace("bottom-12", "-bottom-20");
     }
   }
 
@@ -58,8 +61,26 @@ $(document).ready(function() {
 
       const hash = this.hash;
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - 20
       }, 1000, 'easeInOutExpo')
     }
-  })
-})
+  });
+
+  // Text Replace
+  $(function () {
+    count = 0;
+    wordsArray = ["Special", "Exclusive", "Awesome", "Wonderful"];
+    setInterval(function () {
+      count++;
+      $("#word, #word2").fadeOut(300, function () {
+        $(this).text(wordsArray[count % wordsArray.length]).fadeIn(300);
+      });
+    }, 3000);
+  });
+
+  // Animate on Scroll 
+  AOS.init({
+    easing: 'ease-in-out-cubic',
+    anchorPlacement: 'center-bottom',
+  });
+});

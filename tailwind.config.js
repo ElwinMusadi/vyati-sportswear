@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ["./**/*.html", "./public/**/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
@@ -42,6 +42,11 @@ module.exports = {
       minHeight: {
         '248': '15.5rem',
         '276': '17.25rem',
+      },
+      transitionTimingFunction: {
+        'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
+        'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
+        'in-out-expo': 'cubic-bezier(0.87, 0, 0.13, 1)',
       },
       // backgroundImage: {
       //   'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
