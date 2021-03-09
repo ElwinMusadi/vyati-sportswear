@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  $(".preloader").fadeOut(1500);
+  $(window).on('load', function() {
+    $(".preloader").fadeOut();
+  })
 
   const btnToggle = document.querySelector('.btn-toggle');
   const menuIcon = document.querySelector('.menu');
